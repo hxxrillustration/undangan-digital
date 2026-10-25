@@ -12,7 +12,7 @@ window.LUXE_CONFIG = {
   brand: "LUXE INVITATION",
   tagline: "Your Love Story, Beautifully Told.",
   // Nomor WhatsApp bisnis (format internasional tanpa "+", contoh: 6281234567890)
-  whatsapp: "6281234567890",
+  whatsapp: "6285763202661",
   instagram: "https://instagram.com/luxe.invitation",
   email: "hello@luxe-invitation.com",
 
