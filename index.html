@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUXE INVITATION — Undangan Pernikahan Digital Premium</title>
+  <meta name="description" content="LUXE INVITATION menghadirkan undangan pernikahan digital premium dengan desain elegan, amplop interaktif, musik latar, RSVP, dan galeri foto.">
+  <meta property="og:title" content="LUXE INVITATION — Undangan Pernikahan Digital Premium">
+  <meta property="og:description" content="Your Love Story, Beautifully Told. Undangan digital premium untuk kisah cinta paling istimewa.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=70">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%23151515'/><text x='50' y='64' font-size='46' text-anchor='middle' fill='%23C6A76A' font-family='Georgia'>L</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo" data-nav>LUXE<span>INVITATION</span></a>
+      <nav class="nav-links" id="navLinks" aria-label="Navigasi utama">
+        <a href="#home" data-nav>Home</a>
+        <a href="#koleksi" data-nav>Koleksi</a>
+        <a href="#fitur" data-nav>Fitur</a>
+        <a href="#cara-kerja" data-nav>Cara Kerja</a>
+        <a href="#faq" data-nav>FAQ</a>
+        <a href="#order" class="btn btn-gold nav-cta" data-order>Undangan</a>
+      </nav>
+      <a href="#order" class="btn btn-gold nav-cta-desktop" data-order>Buat Undangan</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="hero-eyebrow reveal">Undangan Pernikahan Digital Premium</p>
+        <h1 class="hero-title reveal delay-1">Your Love Story,<br><em>Beautifully Told.</em></h1>
+        <p class="hero-sub reveal delay-2">Undangan digital yang dirancang dengan sentuhan elegan untuk merayakan kisah cinta paling istimewa dalam hidup Anda.</p>
+        <div class="hero-actions reveal delay-3">
+          <a href="#koleksi" class="btn btn-gold" data-nav>Jelajahi Koleksi</a>
+          <a href="invitation.html?to=Tamu%20Undangan&theme=eternal" class="btn btn-ghost">Lihat Demo</a>
+        </div>
+        <div class="hero-meta reveal delay-4">
+          <div><strong>12+</strong><span>Tema Eksklusif</span></div>
+          <div class="divider"></div>
+          <div><strong>3</strong><span>Paket Layanan</span></div>
+          <div class="divider"></div>
+          <div><strong>100%</strong><span>Mobile Friendly</span></div>
+        </div>
+      </div>
+      <div class="hero-visual reveal delay-2">
+        <div class="phone-mockup float-slow">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <p class="p-eyebrow">The Wedding Of</p>
+            <p class="p-names">Aditya<br><span>&</span><br>Nabila</p>
+            <div class="p-line"></div>
+            <p class="p-date">20 . 12 . 2026</p>
+            <p class="p-open">Buka Undangan</p>
+          </div>
+        </div>
+        <div class="hero-card glass">
+          <i data-lucide="sparkles" aria-hidden="true"></i>
+          <div>
+            <strong>Amplop Digital Interaktif</strong>
+            <span>Pengalaman membuka undangan yang berkesan</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#koleksi" class="scroll-hint" data-nav aria-label="Gulir ke bawah"><span></span></a>
+  </section>
+
+  <!-- ============ KOLEKSI ============ -->
+  <section class="section" id="koleksi">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Koleksi Unggulan</p>
+        <h2>Tema yang Dibuat dengan <em>Hati</em></h2>
+        <p class="section-sub">Setiap tema dirancang seperti halaman majalah pernikahan — tenang, elegan, dan abadi.</p>
+      </div>
+      <div class="collection-grid" id="collectionGrid"><!-- diisi oleh JS dari config.js --></div>
+    </div>
+  </section>
+
+  <!-- ============ FITUR ============ -->
+  <section class="section section-alt" id="fitur">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Fitur Premium</p>
+        <h2>Semua yang Anda Butuhkan, <em>Dalam Satu Tautan</em></h2>
+        <p class="section-sub">Fitur-fitur berikut sudah berfungsi penuh pada halaman undangan demo.</p>
+      </div>
+      <div class="feature-grid" id="featureGrid"><!-- diisi oleh JS --></div>
+    </div>
+  </section>
+
+  <!-- ============ PREVIEW INTERAKTIF ============ -->
+  <section class="section" id="preview">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Coba Sekarang</p>
+        <h2>Lihat Tampilannya <em>Langsung</em></h2>
+        <p class="section-sub">Pilih tema dan mode tampilan — desain preview benar-benar berubah mengikuti tema.</p>
+      </div>
+      <div class="preview-controls reveal">
+        <div class="theme-pills" id="themePills" role="tablist" aria-label="Pilihan tema"></div>
+        <div class="mode-toggle" role="tablist" aria-label="Mode tampilan">
+          <button class="mode-btn active" id="modePhone" aria-label="Tampilan smartphone">
+            <i data-lucide="smartphone" aria-hidden="true"></i> Smartphone
+          </button>
+          <button class="mode-btn" id="modeDesktop" aria-label="Tampilan desktop">
+            <i data-lucide="monitor" aria-hidden="true"></i> Desktop
+          </button>
+        </div>
+      </div>
+      <div class="preview-stage reveal">
+        <!-- Smartphone frame -->
+        <div class="pv-phone" id="pvPhone">
+          <div class="pv-screen" id="pvScreen">
+            <p class="pv-eyebrow">The Wedding Of</p>
+            <p class="pv-names" id="pvNames">Aditya <span>&</span> Nabila</p>
+            <div class="pv-line"></div>
+            <p class="pv-date">Minggu, 20 Desember 2026</p>
+            <p class="pv-theme-name" id="pvThemeName">Eternal Elegance</p>
+            <p class="pv-open">Buka Undangan</p>
+          </div>
+        </div>
+        <!-- Desktop frame -->
+        <div class="pv-desktop hidden" id="pvDesktop">
+          <div class="pv-dtop-bar"><span></span><span></span><span></span></div>
+          <div class="pv-dtop-body" id="pvDesktopBody">
+            <p class="pv-eyebrow">The Wedding Of</p>
+            <p class="pv-names" id="pvDNames">Aditya <span>&</span> Nabila</p>
+            <div class="pv-line"></div>
+            <p class="pv-date">Minggu, 20 Desember 2026</p>
+            <p class="pv-theme-name" id="pvDThemeName">Eternal Elegance</p>
+            <p class="pv-open">Buka Undangan</p>
+          </div>
+        </div>
+      </div>
+      <div class="preview-actions reveal">
+        <a href="#" class="btn btn-dark" id="pvOpenDemo">Buka Undangan Lengkap</a>
+        <button class="btn btn-ghost-dark" id="pvChooseTheme" data-order data-theme-link="eternal">Pilih Tema Ini</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CARA KERJA ============ -->
+  <section class="section section-dark" id="cara-kerja">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow gold">Cara Kerja</p>
+        <h2>Empat Langkah Menuju <em>Undangan Anda</em></h2>
+      </div>
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-dot"><i data-lucide="layout-template" aria-hidden="true"></i></div>
+          <span class="tl-num">01</span>
+          <h3>Pilih Desain</h3>
+          <p>Pilih tema favorit dari koleksi kami — atau konsultasikan gaya impian Anda.</p>
+        </div>
+        <div class="tl-item reveal delay-1">
+          <div class="tl-dot"><i data-lucide="pen-line" aria-hidden="true"></i></div>
+          <span class="tl-num">02</span>
+          <h3>Isi Informasi Pernikahan</h3>
+          <p>Lengkapi nama pasangan, tanggal, lokasi, foto, dan detail acara melalui formulir.</p>
+        </div>
+        <div class="tl-item reveal delay-2">
+          <div class="tl-dot"><i data-lucide="eye" aria-hidden="true"></i></div>
+          <span class="tl-num">03</span>
+          <h3>Periksa Preview</h3>
+          <p>Tinjau hasilnya, ajukan revisi, dan pastikan semuanya sempurna.</p>
+        </div>
+        <div class="tl-item reveal delay-3">
+          <div class="tl-dot"><i data-lucide="link" aria-hidden="true"></i></div>
+          <span class="tl-num">04</span>
+          <h3>Terima Tautan Undangan</h3>
+          <p>Undangan Anda aktif dan siap dibagikan kepada keluarga serta sahabat.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HARGA ============ -->
+  <section class="section" id="harga">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Penawaran</p>
+        <h2>Paket Layanan <em>Transparan</em></h2>
+        <p class="section-sub">Harga contoh yang mudah disesuaikan melalui konfigurasi.</p>
+      </div>
+      <div class="pricing-grid" id="pricingGrid"><!-- diisi oleh JS --></div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONI ============ -->
+  <section class="section section-alt" id="testimoni">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Testimoni</p>
+        <h2>Kata Mereka <em>(Contoh Tampilan)</em></h2>
+        <p class="section-sub">Konten di bawah ini adalah data DEMO untuk menunjukkan tampilan, bukan ulasan pelanggan nyata.</p>
+      </div>
+      <div class="testi-grid">
+        <figure class="testi-card reveal">
+          <div class="stars" aria-label="Rating 5 dari 5">★★★★★</div>
+          <blockquote>“Tamu-tamu kami terkesan dengan amplop digitalnya. Terasa seperti membuka undangan sungguhan.”</blockquote>
+          <figcaption><strong>Rani & Dimas</strong><span>[DEMO] — Jakarta</span></figcaption>
+        </figure>
+        <figure class="testi-card reveal delay-1">
+          <div class="stars" aria-label="Rating 5 dari 5">★★★★★</div>
+          <blockquote>“Prosesnya cepat dan hasilnya elegan banget. Fitur RSVP lewat WhatsApp sangat memudahkan.”</blockquote>
+          <figcaption><strong>Salsa & Bima</strong><span>[DEMO] — Bandung</span></figcaption>
+        </figure>
+        <figure class="testi-card reveal delay-2">
+          <div class="stars" aria-label="Rating 5 dari 5">★★★★★</div>
+          <blockquote>“Desainnya seperti majalah pernikahan mahal. Keluarga besar kami semua bisa akses dari HP.”</blockquote>
+          <figcaption><strong>Ayu & Fajar</strong><span>[DEMO] — Surabaya</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section" id="faq">
+    <div class="container narrow">
+      <div class="section-head reveal">
+        <p class="eyebrow">FAQ</p>
+        <h2>Pertanyaan yang <em>Sering Diajukan</em></h2>
+      </div>
+      <div class="faq-list" id="faqList">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Bagaimana cara memesan?<i data-lucide="plus" aria-hidden="true"></i></button>
+          <div class="faq-a"><p>Pilih tema dan paket, lalu isi formulir pemesanan. Pesanan Anda akan dikirim ke WhatsApp kami dan tim akan menghubungi Anda untuk proses selanjutnya.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Apakah undangan bisa dibuka di HP?<i data-lucide="plus" aria-hidden="true"></i></button>
+          <div class="faq-a"><p>Ya. Undangan dirancang mobile-first dan berfungsi penuh di smartphone, tablet, maupun desktop — cukup dibuka lewat tautan.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Apakah bisa mengganti foto?<i data-lucide="plus" aria-hidden="true"></i></button>
+          <div class="faq-a"><p>Tentu. Kirimkan foto prewedding pilihan Anda, dan tim kami akan menempatkannya pada galeri, sampul, dan bagian profil mempelai.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Apakah bisa mengganti musik?<i data-lucide="plus" aria-hidden="true"></i></button>
+          <div class="faq-a"><p>Bisa, selama lagu yang Anda pilih memiliki izin penggunaan yang sah. Musik dapat diganti melalui konfigurasi dengan mudah.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Bagaimana cara membagikan undangan?<i data-lucide="plus" aria-hidden="true"></i></button>
+          <div class="faq-a"><p>Anda menerima satu tautan undangan yang bisa dibagikan lewat WhatsApp, Instagram, atau media sosial lainnya. Nama tamu juga bisa muncul otomatis di sampul.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Apakah tersedia revisi?<i data-lucide="plus" aria-hidden="true"></i></button>
+          <div class="faq-a"><p>Ya, setiap paket mencakup revisi. Paket Prestige mendapatkan prioritas revisi dengan respon lebih cepat.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Berapa lama proses pembuatan?<i data-lucide="plus" aria-hidden="true"></i></button>
+          <div class="faq-a"><p>Umumnya 2–5 hari kerja tergantung paket dan kelengkapan data. Silakan konfirmasi estimasi terbaru saat pemesanan.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Apakah undangan bisa digunakan setelah masa aktif habis?<i data-lucide="plus" aria-hidden="true"></i></button>
+          <div class="faq-a"><p>Setelah masa aktif berakhir, tautan dapat diperpanjang dengan biaya perpanjangan sesuai ketentuan yang berlaku.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="cta-band">
+    <div class="container cta-inner reveal">
+      <h2>Mulai Kisah Anda <em>Hari Ini</em></h2>
+      <p>Satu tautan. Sejuta kenangan. Buat undangan digital yang layak untuk hari terbesar Anda.</p>
+      <button class="btn btn-gold btn-lg" data-order>Buat Undangan Sekarang</button>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo" data-nav>LUXE<span>INVITATION</span></a>
+        <p>Studio undangan digital premium — merangkai kisah cinta menjadi pengalaman undangan yang elegan dan berkesan.</p>
+        <div class="footer-social">
+          <a id="footerWa" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><i data-lucide="message-circle" aria-hidden="true"></i></a>
+          <a id="footerIg" href="#" target="_blank" rel="noopener" aria-label="Instagram"><i data-lucide="instagram" aria-hidden="true"></i></a>
+          <a id="footerMail" href="#" aria-label="Email"><i data-lucide="mail" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigasi</h4>
+        <a href="#home" data-nav>Home</a>
+        <a href="#koleksi" data-nav>Koleksi</a>
+        <a href="#fitur" data-nav>Fitur</a>
+        <a href="#harga" data-nav>Harga</a>
+        <a href="#faq" data-nav>FAQ</a>
+      </div>
+      <div class="footer-col">
+        <h4>Kontak</h4>
+        <a id="footerWa2" href="#" target="_blank" rel="noopener">WhatsApp: +62 812-3456-7890</a>
+        <a id="footerIg2" href="#" target="_blank" rel="noopener">@luxe.invitation</a>
+        <a href="#">Kebijakan Privasi</a>
+        <a href="#">Syarat &amp; Ketentuan</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> LUXE INVITATION. Seluruh hak cipta dilindungi.</p>
+    </div>
+  </footer>
+
+  <!-- ============ MODAL PEMESANAN ============ -->
+  <div class="modal-overlay" id="orderModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="orderTitle">
+    <div class="modal">
+      <button class="modal-close" id="orderClose" aria-label="Tutup formulir"><i data-lucide="x" aria-hidden="true"></i></button>
+      <div class="modal-body">
+        <div class="modal-form-side" id="modalFormSide">
+          <p class="eyebrow">Formulir Pemesanan</p>
+          <h3 id="orderTitle">Lengkapi Data Pernikahan Anda</h3>
+          <form id="orderForm" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="oGroom">Nama lengkap mempelai pria <b>*</b></label>
+                <input type="text" id="oGroom" name="groom" placeholder="cth: Aditya Pratama" required>
+              </div>
+              <div class="form-field">
+                <label for="oBride">Nama lengkap mempelai wanita <b>*</b></label>
+                <input type="text" id="oBride" name="bride" placeholder="cth: Nabila Putri" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="oGroomNick">Panggilan pria <b>*</b></label>
+                <input type="text" id="oGroomNick" name="groomNick" placeholder="cth: Adit" required>
+              </div>
+              <div class="form-field">
+                <label for="oBrideNick">Panggilan wanita <b>*</b></label>
+                <input type="text" id="oBrideNick" name="brideNick" placeholder="cth: Nabila" required>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="oParents">Nama orang tua (masing-masing pasangan) <b>*</b></label>
+              <textarea id="oParents" name="parents" rows="2" placeholder="cth: Putra kedua dari Bpk Hartono & Ibu Sari / Putri pertama dari Bpk Ahmad & Ibu Rina" required></textarea>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="oDate">Tanggal acara <b>*</b></label>
+                <input type="date" id="oDate" name="date" required>
+              </div>
+              <div class="form-field">
+                <label for="oTime">Jam acara <b>*</b></label>
+                <input type="time" id="oTime" name="time" required>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="oVenue">Nama lokasi / gedung <b>*</b></label>
+              <input type="text" id="oVenue" name="venue" placeholder="cth: Ballroom The Grand Mulia" required>
+            </div>
+            <div class="form-field">
+              <label for="oAddress">Alamat lengkap acara <b>*</b></label>
+              <textarea id="oAddress" name="address" rows="2" placeholder="Jalan, nomor, kota" required></textarea>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="oTheme">Tema yang dipilih <b>*</b></label>
+                <select id="oTheme" name="theme" required></select>
+              </div>
+              <div class="form-field">
+                <label for="oPackage">Paket layanan <b>*</b></label>
+                <select id="oPackage" name="package" required></select>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="oWa">Nomor WhatsApp Anda <b>*</b></label>
+              <input type="tel" id="oWa" name="wa" placeholder="cth: 081234567890" required>
+              <small>Untuk konfirmasi dan koordinasi pemesanan.</small>
+            </div>
+            <div class="form-field">
+              <label for="oNotes">Catatan tambahan</label>
+              <textarea id="oNotes" name="notes" rows="2" placeholder="Warna favorit, permintaan khusus, dsb."></textarea>
+            </div>
+            <div class="form-error" id="orderError" role="alert"></div>
+            <div class="modal-actions">
+              <button type="button" class="btn btn-ghost-dark" id="orderBack">Kembali</button>
+              <button type="submit" class="btn btn-gold">
+                <i data-lucide="send" aria-hidden="true"></i> Kirim via WhatsApp
+              </button>
+            </div>
+            <p class="form-note">Pesanan dikirim sebagai pesan WhatsApp — tekan tombol kirim di WhatsApp untuk menyelesaikan pengiriman. Data tidak disimpan ke server.</p>
+          </form>
+        </div>
+        <div class="modal-summary-side" id="modalSummarySide">
+          <p class="eyebrow">Ringkasan Pemesanan</p>
+          <div class="summary-card" id="orderSummary"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+  <script src="config.js" defer></script>
+  <script src="main.js" defer></script>
+  <script src="page-transition.js" defer></script>
+</body>
+</html>

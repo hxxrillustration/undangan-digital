@@ -1,0 +1,63 @@
+/* ============================================================
+   LUXE INVITATION — css/responsive.css
+   Breakpoints: 1024 / 768 / 480 (tercover 360px)
+   ============================================================ */
+
+@media (max-width: 1024px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 54px; text-align: center; }
+  .hero-copy { display: flex; flex-direction: column; align-items: center; }
+  .hero-card { left: 0; bottom: 10px; }
+  .collection-grid { grid-template-columns: repeat(2, 1fr); }
+  .feature-grid { grid-template-columns: repeat(3, 1fr); }
+  .timeline { grid-template-columns: repeat(2, 1fr); gap: 40px; }
+  .timeline::before { display: none; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .modal-body { grid-template-columns: 1fr; }
+  .modal-summary-side { border-left: 0; border-top: 1px solid #ece5d8; max-height: none; }
+}
+
+@media (max-width: 768px) {
+  :root { --nav-h: 68px; }
+  .nav-toggle { display: flex; }
+  .nav-cta-desktop { display: none; }
+  .nav-links {
+    position: fixed; top: var(--nav-h); right: 0; bottom: 0; width: min(320px, 84vw);
+    background: rgba(21,21,21,.97); backdrop-filter: blur(16px);
+    flex-direction: column; align-items: flex-start; gap: 8px; padding: 34px 30px;
+    transform: translateX(105%); transition: transform .45s var(--ease); z-index: 99;
+  }
+  .nav-links.open { transform: none; }
+  .nav-links a:not(.btn) { font-size: 1.05rem; color: var(--ivory); padding: 12px 0; width: 100%; }
+  .navbar.scrolled .nav-links a:not(.btn) { color: var(--ivory); }
+  .nav-links .nav-cta { margin-top: 14px; }
+  .hero { padding-top: calc(var(--nav-h) + 24px); }
+  .hero-meta { gap: 18px; flex-wrap: wrap; justify-content: center; }
+  .section { padding: 80px 0; }
+  .collection-grid { grid-template-columns: 1fr; }
+  .feature-grid { grid-template-columns: repeat(2, 1fr); }
+  .pricing-grid, .testi-grid { grid-template-columns: 1fr; }
+  .price-card.popular { order: -1; }
+  .form-row { grid-template-columns: 1fr; gap: 0; }
+  .footer-grid { grid-template-columns: 1fr; gap: 36px; }
+  .cta-band { background-attachment: scroll; }
+  .hero-card { position: static; margin-top: 22px; max-width: 100%; }
+  .hero-visual { flex-direction: column; align-items: center; }
+}
+
+@media (max-width: 480px) {
+  body { font-size: 15px; }
+  .feature-grid { grid-template-columns: 1fr; }
+  .timeline { grid-template-columns: 1fr; }
+  .hero-actions .btn { width: 100%; justify-content: center; }
+  .preview-actions .btn { width: 100%; justify-content: center; }
+  .hero-meta { gap: 14px; }
+  .hero-meta .divider { display: none; }
+  .hero-meta div { text-align: center; }
+  .phone-mockup { width: 240px; height: 490px; }
+  .pv-phone { width: 250px; height: 490px; }
+  .modal-form-side { padding: 34px 22px; }
+  .modal-summary-side { padding: 30px 22px; }
+  .modal-actions { flex-direction: column-reverse; }
+  .modal-actions .btn { justify-content: center; }
+  .hero-title { font-size: 2.5rem; }
+}

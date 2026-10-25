@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undangan Pernikahan — Aditya & Nabila | LUXE INVITATION (DEMO)</title>
+  <meta name="description" content="Undangan pernikahan digital Aditya Pratama & Nabila Putri — Minggu, 20 Desember 2026. (Halaman demo)">
+  <meta property="og:title" content="The Wedding of Aditya & Nabila">
+  <meta property="og:description" content="Kami mengundang Anda untuk hadir dalam hari bahagia kami. (Demo)">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%23151515'/><text x='50' y='64' font-size='46' text-anchor='middle' fill='%23C6A76A' font-family='Georgia'>L</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="invitation.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body class="inv-body">
+
+  <!-- ============ OPENING COVER ============ -->
+  <div class="inv-cover" id="invCover">
+    <div class="inv-cover-bg" aria-hidden="true"></div>
+    <div class="inv-cover-inner">
+      <p class="cover-eyebrow reveal visible">The Wedding Of</p>
+      <h1 class="cover-names reveal visible delay-1">Aditya <em>&amp;</em> Nabila</h1>
+      <p class="cover-date reveal visible delay-2">Minggu, 20 Desember 2026</p>
+      <div class="cover-guest reveal visible delay-3">
+        <span>Kepada Yth.</span>
+        <strong id="guestName">Tamu Undangan</strong>
+        <small>di tempat</small>
+      </div>
+      <button class="btn btn-gold cover-open reveal visible delay-4" id="openInvite">
+        <i data-lucide="mail-open" aria-hidden="true"></i> Buka Undangan
+      </button>
+      <p class="cover-note">Mohon maaf apabila terdapat kesalahan penulisan nama/gelar</p>
+    </div>
+  </div>
+
+  <!-- ============ KONTEN UNDANGAN (awalnya tersembunyi) ============ -->
+  <main id="invMain" class="inv-main" aria-hidden="true">
+
+    <!-- HERO -->
+    <section class="inv-hero" id="home">
+      <div class="inv-hero-bg" aria-hidden="true"></div>
+      <div class="inv-hero-overlay" aria-hidden="true"></div>
+      <div class="container inv-hero-inner">
+        <p class="inv-eyebrow">The Wedding Of</p>
+        <h2 class="inv-hero-names">Aditya <em>&amp;</em> Nabila</h2>
+        <p class="inv-hero-date">Minggu, 20 Desember 2026</p>
+        <a href="#event" class="btn btn-gold" data-scroll>Lihat Acara</a>
+      </div>
+    </section>
+
+    <!-- COUPLE PROFILE -->
+    <section class="inv-section" id="couple">
+      <div class="container">
+        <div class="inv-head reveal">
+          <p class="eyebrow">Mempelai</p>
+          <h2>Dua Hati, <em>Satu Perjalanan</em></h2>
+        </div>
+        <div class="couple-grid">
+          <article class="couple-card reveal">
+            <div class="couple-photo">
+              <img id="groomPhoto" src="" alt="Foto mempelai pria (demo)" loading="lazy">
+            </div>
+            <div class="couple-info">
+              <h3 id="groomName"></h3>
+              <p class="couple-nick" id="groomNick"></p>
+              <p class="couple-parents" id="groomParents"></p>
+              <p class="couple-desc" id="groomDesc"></p>
+              <a id="groomIg" href="#" target="_blank" rel="noopener" class="couple-ig">
+                <i data-lucide="instagram" aria-hidden="true"></i> <span id="groomIgHandle"></span>
+              </a>
+            </div>
+          </article>
+          <div class="couple-amp" aria-hidden="true">&amp;</div>
+          <article class="couple-card reverse reveal delay-1">
+            <div class="couple-photo">
+              <img id="bridePhoto" src="" alt="Foto mempelai wanita (demo)" loading="lazy">
+            </div>
+            <div class="couple-info">
+              <h3 id="brideName"></h3>
+              <p class="couple-nick" id="brideNick"></p>
+              <p class="couple-parents" id="brideParents"></p>
+              <p class="couple-desc" id="brideDesc"></p>
+              <a id="brideIg" href="#" target="_blank" rel="noopener" class="couple-ig">
+                <i data-lucide="instagram" aria-hidden="true"></i> <span id="brideIgHandle"></span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section class="inv-countdown" id="countdown">
+      <div class="container">
+        <p class="eyebrow gold" style="text-align:center">Menghitung Hari Bahagia</p>
+        <div class="cd-grid" id="cdGrid" role="timer" aria-live="polite">
+          <div class="cd-box"><span id="cdDays">0</span><label>Hari</label></div>
+          <div class="cd-box"><span id="cdHours">0</span><label>Jam</label></div>
+          <div class="cd-box"><span id="cdMins">0</span><label>Menit</label></div>
+          <div class="cd-box"><span id="cdSecs">0</span><label>Detik</label></div>
+        </div>
+        <p class="cd-done hidden" id="cdDone"></p>
+      </div>
+    </section>
+
+    <!-- EVENT -->
+    <section class="inv-section section-alt" id="event">
+      <div class="container">
+        <div class="inv-head reveal">
+          <p class="eyebrow">Rangkaian Acara</p>
+          <h2>Waktu &amp; <em>Tempat</em></h2>
+        </div>
+        <div class="event-grid">
+          <article class="event-card reveal">
+            <div class="event-icon"><i data-lucide="scroll-text" aria-hidden="true"></i></div>
+            <h3 id="akadTitle">Akad Nikah</h3>
+            <ul class="event-list">
+              <li><i data-lucide="calendar" aria-hidden="true"></i><span id="akadDate"></span></li>
+              <li><i data-lucide="clock" aria-hidden="true"></i><span id="akadTime"></span></li>
+              <li><i data-lucide="map-pin" aria-hidden="true"></i><span><strong id="akadVenue"></strong><br><span id="akadAddress"></span></span></li>
+            </ul>
+            <a href="#" class="btn btn-dark" id="akadMap" target="_blank" rel="noopener">Lihat Lokasi</a>
+          </article>
+          <article class="event-card reveal delay-1">
+            <div class="event-icon"><i data-lucide="party-popper" aria-hidden="true"></i></div>
+            <h3 id="resepsiTitle">Resepsi</h3>
+            <ul class="event-list">
+              <li><i data-lucide="calendar" aria-hidden="true"></i><span id="resepsiDate"></span></li>
+              <li><i data-lucide="clock" aria-hidden="true"></i><span id="resepsiTime"></span></li>
+              <li><i data-lucide="map-pin" aria-hidden="true"></i><span><strong id="resepsiVenue"></strong><br><span id="resepsiAddress"></span></span></li>
+            </ul>
+            <a href="#" class="btn btn-dark" id="resepsiMap" target="_blank" rel="noopener">Lihat Lokasi</a>
+          </article>
+        </div>
+        <p class="demo-note">Data acara di atas merupakan CONTOH DEMO dan dapat diganti melalui konfigurasi.</p>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="inv-section" id="gallery">
+      <div class="container">
+        <div class="inv-head reveal">
+          <p class="eyebrow">Galeri</p>
+          <h2>Momen <em>Kami</em></h2>
+        </div>
+        <div class="gal-grid" id="galGrid"><!-- diisi JS --></div>
+      </div>
+    </section>
+
+    <!-- LOVE STORY -->
+    <section class="inv-section section-alt" id="story">
+      <div class="container narrow">
+        <div class="inv-head reveal">
+          <p class="eyebrow">Perjalanan Kami</p>
+          <h2>Love <em>Story</em></h2>
+        </div>
+        <div class="story-list" id="storyList"><!-- diisi JS --></div>
+        <p class="demo-note">Tanggal dan cerita adalah contoh demo.</p>
+      </div>
+    </section>
+
+    <!-- RSVP -->
+    <section class="inv-section" id="rsvp">
+      <div class="container narrow">
+        <div class="inv-head reveal">
+          <p class="eyebrow">RSVP</p>
+          <h2>Konfirmasi <em>Kehadiran</em></h2>
+        </div>
+        <form class="inv-form reveal" id="rsvpForm" novalidate>
+          <div class="form-field">
+            <label for="rName">Nama Anda <b>*</b></label>
+            <input type="text" id="rName" maxlength="60" required placeholder="Nama lengkap Anda">
+          </div>
+          <div class="form-field">
+            <label for="rWa">Nomor WhatsApp (opsional)</label>
+            <input type="tel" id="rWa" maxlength="20" placeholder="cth: 081234567890">
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="rStatus">Kehadiran <b>*</b></label>
+              <select id="rStatus" required>
+                <option value="">— Pilih —</option>
+                <option value="Hadir">Hadir, Insya Allah</option>
+                <option value="Berhalangan">Berhalangan Hadir</option>
+                <option value="Masih Ragu">Masih Ragu</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="rCount">Jumlah Tamu <b>*</b></label>
+              <select id="rCount" required></select>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="rMsg">Ucapan untuk pasangan (opsional)</label>
+            <textarea id="rMsg" rows="3" maxlength="300" placeholder="Tuliskan doa terbaik Anda..."></textarea>
+          </div>
+          <div class="form-error" id="rsvpError" role="alert"></div>
+          <button type="submit" class="btn btn-gold btn-lg" style="width:100%;justify-content:center">
+            <i data-lucide="send" aria-hidden="true"></i> Kirim Konfirmasi via WhatsApp
+          </button>
+          <p class="form-note">Konfirmasi akan membuka WhatsApp — tekan tombol kirim di WhatsApp untuk menyelesaikan. Data juga disimpan sebagai demo di browser ini saja (LocalStorage), bukan di server.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- DIGITAL GIFT -->
+    <section class="inv-section section-dark" id="gift">
+      <div class="container narrow">
+        <div class="inv-head reveal">
+          <p class="eyebrow gold">Tanda Kasih</p>
+          <h2 style="color:#F8F5EF">Hadiah <em>Digital</em></h2>
+          <p class="section-sub" style="color:rgba(248,245,239,.65)">Kehadiran Anda adalah hadiah terindah. Namun apabila ingin berbagi tanda kasih:</p>
+        </div>
+        <div class="gift-list" id="giftList"><!-- diisi JS --></div>
+        <div class="gift-address reveal" id="giftAddressWrap">
+          <i data-lucide="package" aria-hidden="true"></i>
+          <div><strong>Alamat pengiriman hadiah</strong><p id="giftAddressText"></p></div>
+        </div>
+        <p class="demo-note" style="color:rgba(248,245,239,.5)">Seluruh nomor rekening di atas adalah PLACEHOLDER DEMO — bukan rekening nyata.</p>
+      </div>
+    </section>
+
+    <!-- WISHES -->
+    <section class="inv-section section-alt" id="wishes">
+      <div class="container narrow">
+        <div class="inv-head reveal">
+          <p class="eyebrow">Doa &amp; Ucapan</p>
+          <h2>Wedding <em>Guestbook</em></h2>
+        </div>
+        <form class="inv-form reveal" id="wishForm" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="wName">Nama <b>*</b></label>
+              <input type="text" id="wName" maxlength="40" required placeholder="Nama Anda">
+            </div>
+            <div class="form-field">
+              <label for="wRelation">Hubungan (opsional)</label>
+              <input type="text" id="wRelation" maxlength="30" placeholder="cth: Sahabat SMA">
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="wMsg">Ucapan &amp; doa <b>*</b> <span style="font-weight:400;color:#8a8272">(maks 250 karakter)</span></label>
+            <textarea id="wMsg" rows="3" maxlength="250" required placeholder="Tuliskan doa terbaik untuk kedua mempelai..."></textarea>
+          </div>
+          <div class="form-error" id="wishError" role="alert"></div>
+          <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center">
+            <i data-lucide="heart" aria-hidden="true"></i> Kirim Ucapan
+          </button>
+          <p class="form-note">Ucapan tersimpan sebagai demo di browser ini saja (LocalStorage). Struktur kode siap dihubungkan ke backend di kemudian hari.</p>
+        </form>
+        <div class="wish-list reveal" id="wishList" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- FOOTER INVITATION -->
+    <footer class="inv-footer">
+      <div class="container">
+        <p class="eyebrow gold">Terima Kasih</p>
+        <h2>Merupakan suatu kehormatan dan kebahagiaan bagi kami<br>apabila Anda berkenan hadir.</h2>
+        <p class="inv-footer-names">Aditya <em>&amp;</em> Nabila</p>
+        <p class="inv-footer-brand">Digital invitation by <a href="index.html">LUXE INVITATION</a></p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- KONTROL MUSIK -->
+  <button class="music-btn hidden" id="musicBtn" aria-label="Putar / jeda musik" aria-pressed="false">
+    <i data-lucide="volume-x" aria-hidden="true" id="musicIconOff"></i>
+    <i data-lucide="volume-2" aria-hidden="true" id="musicIconOn" class="hidden"></i>
+  </button>
+
+  <!-- NAVIGASI BAWAH (MOBILE) -->
+  <nav class="inv-bnav" aria-label="Navigasi undangan">
+    <a href="#home" data-scroll class="active"><i data-lucide="home" aria-hidden="true"></i><span>Home</span></a>
+    <a href="#couple" data-scroll><i data-lucide="users" aria-hidden="true"></i><span>Couple</span></a>
+    <a href="#event" data-scroll><i data-lucide="calendar-heart" aria-hidden="true"></i><span>Event</span></a>
+    <a href="#gallery" data-scroll><i data-lucide="images" aria-hidden="true"></i><span>Gallery</span></a>
+    <a href="#rsvp" data-scroll><i data-lucide="clipboard-check" aria-hidden="true"></i><span>RSVP</span></a>
+  </nav>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Pratinjau foto">
+    <button class="lb-close" id="lbClose" aria-label="Tutup (Esc)"><i data-lucide="x" aria-hidden="true"></i></button>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="Foto sebelumnya"><i data-lucide="chevron-left" aria-hidden="true"></i></button>
+    <img id="lbImg" src="" alt="">
+    <button class="lb-nav lb-next" id="lbNext" aria-label="Foto berikutnya"><i data-lucide="chevron-right" aria-hidden="true"></i></button>
+    <p class="lb-counter" id="lbCounter"></p>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+  <script src="config.js" defer></script>
+  <script src="invitation.js" defer></script>
+  <script src="page-transition.js" defer></script>
+</body>
+</html>
